@@ -1,5 +1,10 @@
 \name{NEWS}
 \title{News for Package 'censReg'}
+\section{Changes in censReg version 0.5-37 (2024-04-18)}{
+  \itemize{
+    \item added GH-Actions
+  }
+}
 \section{Changes in censReg version 0.5-36 (2022-08-03)}{
   \itemize{
     \item a few minor internal improvements (no user-visible changes)
