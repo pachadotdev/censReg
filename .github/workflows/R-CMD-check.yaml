@@ -50,7 +50,7 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          tinytex: false
+          tinytex: true
 
       - name: Check R package
         uses: r-lib/actions/check-r-package@v2
@@ -60,3 +60,4 @@ jobs:
       
       - name: Print test output
         run: cat tests/censRegPanelTest.Rout || echo "No test output found"
+        if: runner.os == 'Linux' || runner.os == 'macOS'
